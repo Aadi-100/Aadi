@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#main .header {
+    display: flex;
+    width: 100vw;
+    color: #080824;
+    justify-content: center;
+    align-content: center;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 9px -2px rgba(0,0,0,0.75);
+    width: 100vw;
+}
+#main .header h1 {
+    font-size: 45px;
+}
+
+#main .body {
+    display: flex;
+    width: 100vw;
+    gap: 2rem;
+}
+.body .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    width: 50%;
+    height: 500px;
+    padding: 40px;
+}
+.body .left h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.body .left p {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 500;
+}
+.body .left #youtube {
+    font-weight: bold;
+    font-size: 14px;
+    width: 200px;
+    padding: 7px 20px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: transform ease 0.25s , box-shadow ease 0.25s, color ease-in-out 0.0000001s;
+    text-decoration: none;
+    color: #000;
+}
+.body .left a#youtube:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    color: aqua;
+}
+.body .right {
+    width: 50%;
+}
+.body .right img {
+    display: inline-block;
+    border-radius: 10px;
+    height: 450px;
+    margin-left: 50px;
+    box-shadow: 0px 0px 22px -8px rgba(0,0,0,0.75);
+    margin-top: 40px;
+}
+
+@media all and (max-width: 2560px) {
+    .body {
+        padding: 20px 40px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #main .header h1{
+        font-size: 33px;
+    }
+    #main .body {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 3rem;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .body .left {
+        width: 100%;
+        align-items: center;
+    }
+    .body .left p {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .body .right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }.body .right img{
+        margin: 0;
+    }
+}
+@media all and (max-width: 565px) {
+    .body {
+        margin-top: 20px;
+    }
+    .body .left {
+        padding: 15px;
+    }
+    .body .left p {
+        font-size: 14px;
+        line-height: 20px
+    }
+    .body .right img{
+        width: 100%;
+        height: 350px;
+    }
+}
+@media all and (max-width: 375px) {
+    .body {
+        gap: 5rem;
+    }
+    .body .left {
+        margin-top: 20px;
+    }
+    .body .right{
+        margin-top: 65px;
+    }
+    .body .right img{
+        width: 100%;
+        height: 300px;
+    }
+    
+}
+@media all and (max-width: 320px) {
+    .body {
+        padding: 10px 10px;
+    }
+    .body .left {
+        margin-top: 28px;
+        margin-bottom: 30px;
+    }
+    .body .left h2 {
+        font-size: 35px;
+    }
+    .body .left p {
+        font-size: 14px;
+    }
+    .body .right img{
+        height: 310px
+    }
+}
